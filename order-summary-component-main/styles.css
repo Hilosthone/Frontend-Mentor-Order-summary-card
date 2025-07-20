@@ -1,0 +1,154 @@
+/* 1. Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 375px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.card p {
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.plan-flex {
+  background-color: hsl(225, 100%, 98%);
+  margin: 0 2rem 1.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-details-one {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-icon-one img {
+  width: 40px;
+}
+
+.plan-text-one h2 {
+  font-size: 1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-text-one p {
+  font-size: 0.9rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-details-two .change-plan {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.plan-details-two .change-plan:hover {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+.proceed-button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: calc(100% - 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.proceed-button:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.cancel-button {
+  background: none;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('./images/pattern-background-mobile.svg');
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  .card p {
+    padding: 0 1.5rem;
+  }
+
+  .plan-flex {
+    margin: 0 1.5rem 1.5rem;
+  }
+
+  .proceed-button {
+    width: calc(100% - 3rem);
+  }
+}
